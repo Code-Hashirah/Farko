@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add products</title>
+    <title>Add News<</title>
     @extends ('layouts.app')
-    @section('form') 
+    @section('form')
     @if (session('success'))
-<h2>Add Product</h2>
+<h2>Add News</h2>
 <div class="alert alert-success">
   <strong>Success!</strong>Blog added.
 </div>
  @endif
     <!-- <center> -->
         <form action="{{url('/admin/addBlog')}}" method="post">
-      
+
         @csrf
         <h3 id="sign-up-h3" style="color: rgb(27, 6, 6);">Add products</h3>
                 <div class="input">
@@ -29,7 +29,7 @@
                     <label class="label" for="">Picture</label>
                     <input  class="inpt-tag" name="Picture" type="text">
                 </div>
-              
+
                 <div class="input">
                   <button class="button btn btn-danger" type="submit">Add to Blogs</button>
                 </div>
