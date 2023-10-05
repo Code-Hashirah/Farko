@@ -1,0 +1,5 @@
+@include('layouts.navbar')
+@yield('form')
+@yield('table')
+@yield('allBlog')
+@include('layouts.footer')
