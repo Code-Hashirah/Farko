@@ -11,3 +11,6 @@ Route::get('/admin/manage-blog',[NewsBlog::class,'getAll']);
 Route::delete('/admin/delete-blog',[NewsBlog::class, 'deleteBlog']);
 Route::get('/admin/edit-blog/{id}',[NewsBlog::class, 'editBlog']);
 Route::put('/admin/update-blog',[NewsBlog::class, 'updateBlog']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
